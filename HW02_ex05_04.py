@@ -23,7 +23,25 @@
 # Write your functions below:
 # Body
 
+def is_triangle(a,b,c):
+    if a+b<c or a+c<b or c+b<a:
+        print 'Yes'
+    elif a+b>c or a+c>b or c+b>a:
+        print 'No'
 
+is_triangle(5,7,9)
+
+a = int(raw_input('What is the length of stick a?\n'))
+b = int(raw_input('What is the length of stick b?\n'))
+c = int(raw_input('What is the length of stick c?\n'))
+
+def is_triangle(a,b,c):
+    if a+b<c or a+c<b or c+b<a:
+        print 'Yes'
+    elif a+b>c or a+c>b or c+b>a:
+        print 'No'
+
+is_triangle(a,b,c)
 
 
 
