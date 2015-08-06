@@ -35,10 +35,58 @@
 # Write your functions below:
 # Body
 
+def do_twice(f):
+    f()
+    f()
 
+def do_four(f):
+    do_twice(f)
+    do_twice(f)
 
+def half_line_one():
+    print '+ - - - -',
 
+def half_line_two():
+    print '|        ',
 
+def full_line_one():
+    do_twice(half_line_one)
+    print '+'
+
+def full_line_two():
+    do_twice(half_line_two)
+    print '|'
+
+def draw_row():
+    full_line_one()
+    do_four(full_line_two)
+
+def draw_small_grid():
+    do_twice(draw_row)
+    full_line_one()
+
+draw_small_grid()
+
+def double_line_one():
+	do_four(half_line_one)
+	print '+'
+
+def double_line_two():
+	do_four(half_line_two)
+	print '|'
+
+def draw_double_row():
+	double_line_one()
+	do_four(double_line_two)
+
+def draw_double_columns():
+	do_twice(draw_double_row)
+
+def draw_large_grid():
+	do_twice(draw_double_columns)
+	double_line_one()
+
+draw_large_grid()
 
 
 
