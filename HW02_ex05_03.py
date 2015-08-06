@@ -21,6 +21,27 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
+	if n > 2 and (a**n + n**n == c**n):
+		print ("Holy smokes, Fermat was wrong!")
+	else:
+		print ("No, that doesn't work!")
+
+check_fermat(1,2,3,3)
+
+
+a = int(raw_input('What is the value for a?\n'))
+b = int(raw_input('What is the value for b?\n'))
+c = int(raw_input('What is the value for c?\n'))
+n = int(raw_input('What is the value for n?\n'))
+	
+def check_fermat_ints(a,b,c,n):
+	if n > 2 and (a**n + n**n == c**n):
+		print ("Holy smokes, Fermat was wrong!")
+	else:
+		print ("No, that doesn't work!")
+
+check_fermat_ints(a,b,c,n)
 
 
 
