@@ -8,7 +8,16 @@
 # Write your functions below:
 # Body
 
+def fruit():
+	print 'tomato'
 
+def do_n(s, n):
+    if n <= 0:
+        return
+    fruit()
+    do_n(s, n-1)
+
+do_n(fruit,3)
 
 
 
